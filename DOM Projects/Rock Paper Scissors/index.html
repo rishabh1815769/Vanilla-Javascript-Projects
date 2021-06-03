@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Rock Paper Scissors Game</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+
+    <!--     Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css.css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Files -->
+    <link href="material-kit.min.css?v=2.2.0" rel="stylesheet" /> 
+  </head>
+
+  <body class="login-page sidebar-collapse">
+    <div
+      class="page-header header-filter"
+      style="
+        background-color: #7952b3;
+        background-size: cover;
+        background-position: top center;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
+            <form class="form" method="" action="">
+              <div class="card card-login card-hidden">
+                <div class="card-header card-header-primary text-center">
+                  <h4 class="card-title">Rock Paper Scissors</h4>
+                  <div class="score">
+                    <div class="playerScore">
+                      <h5>Players's Score:</h5>
+                      <p class="p-count count">0</p>
+                    </div>
+                    <div class="computerScore">
+                      <h5>Computer's Score:</h5>
+                      <p class="c-count count">0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-description text-center" id="move">
+                    Choose Your Move
+                  </h5>
+                  <h5 class="card-description text-center" id="movesleft">
+                    Moves Left: 10
+                  </h5>
+                </div>
+                <div class="card-footer justify-content-center">
+                  <div
+                    class="btn-group"
+                    role="group"
+                    aria-label="Basic example"
+                    id="options"
+                  >
+                    <button type="button" class="btn btn-primary" id="rock">
+                      Rock
+                    </button>
+                    <button type="button" class="btn btn-primary" id="paper">
+                      Paper
+                    </button>
+                    <button type="button" class="btn btn-primary" id="scissor">
+                      Scissors
+                    </button>
+                  </div>
+                </div>
+                <div
+                  id="result"
+                  class="btn btn-secondary btn-lg"
+                  disabled
+                ></div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="reload"
+                ></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <h4 style="text-align: right">
+            Project By: Rishabh Bhardwaj (1815769)
+          </h4>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
